@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "lint": "biome lint src",
+    "format": "biome check --apply .",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
+    "elysia-autoload": "^0.1.5",
+    "handlebars": "^4.7.8",
+    "pug": "^3.0.2",
+    "react": "^18.2.0"
+  },
+  "name": "homeworker",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "bun-html-live-reload": "^0.1.2"
+  }
+}

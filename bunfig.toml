@@ -1,0 +1,4 @@
+[loader]
+".hbs" = "text"
+".pug" = "text"
+".svg" = "text"
