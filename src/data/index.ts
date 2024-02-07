@@ -1,6 +1,7 @@
 // const { drizzle } = import.meta.env.DEV
-//   ? require('drizzle-orm/better-sqlite3')
+//   ? require('drizzle-orm/bun-sqlite')
 //   : require('drizzle-orm/libsql')
+//   import { Database } from 'bun:sqlite'
 import { drizzle } from 'drizzle-orm/libsql'
 import { createClient } from '@libsql/client/web'
 
@@ -8,6 +9,7 @@ import { createClient } from '@libsql/client/web'
 // const url = development
 //   ? process.env.DB_URL_DEV || 'local.db'
 //   : process.env.TURSO_DB_URL || ''
+//   const sqlite = new Database(process.env.DB_URL_DEV || 'local.db')
 
 const client = createClient({
   url: process.env.TURSO_DB_URL || '',
