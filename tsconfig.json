@@ -13,9 +13,18 @@
     "verbatimModuleSyntax": true,
     "noEmit": true,
     "baseUrl": ".",
+    "files": [
+      "src/globals.d.ts"
+    ],
     "paths": {
+      "$/*": [
+        "src/*"
+      ],
       "$routes/*": [
         "src/routes/*"
+      ],
+      "$data/*": [
+        "src/data/*"
       ],
       "$components/*": [
         "src/components/*"

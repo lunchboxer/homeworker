@@ -1,4 +1,4 @@
-import { html } from '../html'
+import { html } from '$/html'
 import { footer } from '$components/footer'
 import { header } from '$components/header'
 

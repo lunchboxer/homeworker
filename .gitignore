@@ -177,3 +177,5 @@ dist
 notes.md
 htmx.*js
 public/fonts/*
+bun.lockb  
+local.db
